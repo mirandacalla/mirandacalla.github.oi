@@ -859,6 +859,40 @@ video {
   animation: fade-right 1s both;
 }
 
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 1s both;
+}
+
+@keyframes jump-in {
+  0% {
+    transform: scale(0%);
+  }
+
+  80% {
+    transform: scale(120%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+}
+
+.animate-jump-in {
+  animation: jump-in .5s both;
+}
+
 @keyframes wiggle {
   0%, 100% {
     transform: rotate(-3deg);
@@ -885,40 +919,6 @@ video {
 
 .animate-wiggle-more {
   animation: wiggle-more 1s both;
-}
-
-@keyframes jump-in {
-  0% {
-    transform: scale(0%);
-  }
-
-  80% {
-    transform: scale(120%);
-  }
-
-  100% {
-    transform: scale(100%);
-  }
-}
-
-.animate-jump-in {
-  animation: jump-in .5s both;
-}
-
-@keyframes fade-up {
-  0% {
-    opacity: 0;
-    transform: translateY(2rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-up {
-  animation: fade-up 1s both;
 }
 
 .appearance-none {
@@ -1032,11 +1032,6 @@ video {
 
 .bg-\[\#f1d3bca8\] {
   background-color: #f1d3bca8;
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-gray-200 {
